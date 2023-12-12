@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+          Avalon Adventures - Contact Us
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <!-- Prevent search engine indexing if I put these pages online -->
+        <meta name=”robots” content=”noindex,nofollow”>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Add Font Awesome icon library -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+    <body>
+        <header>
+            <div class="header-logo">
+                <a href="index.html"><span class="logo"><img src="img/logo_white.png" width="179" height="150" alt="Avalon Adventures"></span></a>
+            </div>
+            <nav id="myNav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="contact.html" class="active-page">Contact Us</a></li>
+                </ul>
+                <a href="javascript:void(0);" class="icon" id="menu-open" onclick="toggleMenu(this.parentElement)"><i class="fa fa-bars"></i> Menu</a>
+                <a href="javascript:void(0);" class="icon" id="menu-close" onclick="toggleMenu(this.parentElement)"><i class="fa fa-close"></i> Close Menu</a>
+            </nav>
+        </header>
+        <div class="content">
+            <h1>
+                Contact Us
+            </h1>
+            <div class="contact-section">
+                <div class="contact-options">
+                    Phone:
+                    <br>
+                    709-555-5555
+                    <br><br>
+                    Email:
+                    <br>
+                    <a href="email:info@AvalonAdventures.ca">info@AvalonAdventures.ca</a>
+                    <br><br>
+                    Social media:
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                    Office location:
+                    <br>
+                    725 Saint Christopher Crescent
+                    <br>
+                    St. John's, NL
+                </div>
+                <form class="contact-form" name="contactForm">
+                    <label for="name">Name <span class="required-field-note">(required)</span></label>
+                    <br>
+                    <input type="text" id="name" name="name" style="width:100%">
+                    <br>
+                    <br>
+                    <label for="email">Email <span class="required-field-note">(required)</span></label>
+                    <br>
+                    <input type="email" id="email" name="email" style="width:100%">
+                    <br>
+                    <br>
+                    <label for="phone">Phone number</label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" style="width:100%">
+                    <br>
+                    <br>
+                    <label for="question">Question <span class="required-field-note">(required)</span></label>
+                    <br>
+                    <textarea id="question" name="question" rows="6" style="width:100%"></textarea>
+                    <br>
+                    <br>
+                    <button type="button" onclick="return validateContactForm()">Send</button>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-section">
+                <address>
+                    <span class="address-name">Avalon Adventures</span><br>
+                    725 Saint Christopher Cres.<br>
+                    St. John's, NL&nbsp;&nbsp;A1A 1A1<br>
+                    (709) 555-5555
+                </address>
+            </div>
+            <div class="footer-section">
+                <!-- This section is for show only. All social media links are non-functional. -->
+                <div class="social-icons">
+                    Share this: 
+                    <a href="#" class="fa fa-facebook-official" title="Facebook"></a>
+                    <a href="#" class="fa fa-instagram" title="Instagram"></a>
+                    <a href="#" class="fa fa-twitter" title="Twitter"></a>
+                    <a href="#" class="fa fa-linkedin" title="LinkedIn"></a>
+                    <a href="#" class="fa fa-envelope" title="Email"></a>
+                    <a href="#" class="fa fa-chain" title="Copy link"></a>
+                </div>
+                <div class="social-icons">
+                    Follow us:
+                    <a href="#" class="fa fa-facebook-official" title="Facebook"></a>
+                    <a href="#" class="fa fa-instagram" title="Instagram"></a>
+                    <a href="#" class="fa fa-twitter" title="Twitter"></a>
+                </div>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>
